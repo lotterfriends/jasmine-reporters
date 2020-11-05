@@ -202,7 +202,7 @@
             function nodeWrite(path, filename, text) {
                 var fs = require("fs");
                 var nodejs_path = require("path");
-                require("mkdirp").sync(path); // make sure the path exists
+                require("shelljs").mkdir('-p', path); // make sure the path exists
                 var filepath = nodejs_path.join(path, filename);
                 var xmlfile = fs.openSync(filepath, "w");
                 fs.writeSync(xmlfile, text, 0);

@@ -18,7 +18,8 @@
   },
   "dependencies": {
     "mkdirp": "^0.5.1",
-    "xmldom": "^0.1.22"
+    "xmldom": "^0.1.22",
+    "shelljs": "^0.8.4"
   },
   "devDependencies": {
     "eslint": "^4.11.0",
